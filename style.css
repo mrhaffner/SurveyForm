@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(189,189,252,1) 74%, rgba(0,212,255,1) 100%);
+}
+
+#survey-form {
+    background-color:rgba(125, 125, 227, .5);
+    width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    
+
+div {
+    padding: 10px 0 10px 0;
+}
+
+.description-label {
+    
+}

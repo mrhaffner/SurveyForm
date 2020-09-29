@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>freeCodeCamp Survery Form Project</title>
 </head>
 <body>
     <header>
-        <h1 id="title"></h1>
+        <h1 id="title">Title</h1>
+        <p id="description">Description</p>
     </header>
     <main>
-        <p id="description"></p>
-        <form id="survery-form">
-            <label id="name-label" for="name">Name</label>
-            <input id="name" type="text" name="name">
-            <label id="email-label" for="email">E-Mail</label>
-            <input id="email" type="email" name="email">
-            <!--If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
-            <label id="number-label" for="number">????Number???</label>
-            <input id="number" type="number" name="number" min="" max="">
-            <!--If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
-            <label id="dropdown-label" for="dropdown">????DropdownOption???</label>
-            <select id="dropdown" name="dropdown">
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-            <p>???RadioButtons</p>
-            <input type="radio" id="" name="" value="">
-            <label for=""></label><br>
-            <input type="radio" id="" name="" value="">
-            <label for=""></label><br>
-            <p>???CheckBoxes</p>
-            <input type="checkbox" id="" name="" value="">
-            <label for=""></label><br>
-            <input type="checkbox" id="" name="" value="">
-            <label for=""></label><br>
-            <label for="comments">Please Enter Additional Comments</label><br>
-            <textarea id="textarea" name="comments" rows="10" cols="10"></textarea>
-            <button type="button" id="submit">Submit</button>
+        <form id="survey-form">
+            <div id="name-div">
+                <label class="description-label" id="name-label" for="name">Name</label><br>
+                <input id="name" type="text" name="name">
+            </div>
+            <div id="email-div">
+                <label class="description-label" id="email-label" for="email">E-Mail</label><br>
+                <input id="email" type="email" name="email">
+                <!--If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+            </div>
+            <div id="number-div">
+                <label class="description-label" id="number-label" for="number">????Number???</label><br>
+                <input id="number" type="number" name="number" min="" max="">
+                <!--If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+            </div>
+            <div id="dropdown-div">
+                <label class="description-label" id="dropdown-label" for="dropdown">????DropdownOption???</label><br>
+                <select id="dropdown" name="dropdown">
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div id="radio-div">
+                <label class="description-label">???RadioButtons</label><br>
+                <input type="radio" id="" name="" value="">
+                <label for=""></label><br>
+                <input type="radio" id="" name="" value="">
+                <label for=""></label><br>
+            </div>
+            <div id="checkbox-div">
+                <label class="description-label">???CheckBoxes</label><br>
+                <input type="checkbox" id="" name="" value="">
+                <label for=""></label><br>
+                <input type="checkbox" id="" name="" value="">
+                <label for=""></label><br>
+            </div>
+            <div id="textarea-dive">
+                <label class="description-label" for="comments">Please Enter Additional Comments</label><br>
+                <textarea id="textarea" name="comments" rows="5" cols="50"></textarea>
+            </div>
+                <button type="button" id="submit">Submit</button>
         </form>
     </main>
 
