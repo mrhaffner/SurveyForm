@@ -7,30 +7,62 @@ body {
     background-image: url("bg-forest.jpg");
     /*https://www.freepik.com/free-vector/natural-background-with-tropical-forest-landscape_5223888.htm#page=1&query=forest+background&position=46*/
     background-size: cover;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     font: ;
     color: white;
+    font-size: 20px;
 }
 
 header {
     text-align: center;
+    text-shadow: 
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 }
 
 div {
     padding: 10px 0 10px 0;
 }
 
+input {
+    /*border: none;*/
+    outline: none;
+}
+
+textarea {
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(25,74,47, 0.0);
+    border: 3px solid white;
+    color: white;
+    padding: 8px 0 0 12px;
+}
+
 input, textarea, select {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #name, #email, #number {
-    padding: 7px 160px;
+    height: 30px;
+    width: 485px;
+    /*text-indent: 10px;*/
+    padding-left: 12px;
     border-radius: 10px;
+    background-color: rgba(25,74,47, 0.0);
+    border: 3px solid white;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: .7;
+    padding-left: 2px;
 }
 
 #survey-form {
-    background-color:rgba(25,74,47, 0.85);
+    background-color:rgba(25,74,47, 0.9);
     width: 500px;
     height: auto;
     margin: auto;

@@ -14,17 +14,23 @@
     <main>
         <form id="survey-form">
             <div id="name-div">
-                <label class="description-label" id="name-label" for="name">Name</label><br>
-                <input id="name" type="text" name="name">
+                <label class="description-label" id="name-label" for="name">
+                    Name
+                </label><br>
+                <input id="name" type="text" name="name" placeholder="First and Last"> 
             </div>
             <div id="email-div">
-                <label class="description-label" id="email-label" for="email">E-Mail</label><br>
-                <input id="email" type="email" name="email">
+                <label class="description-label" id="email-label" for="email">
+                    E-Mail
+                </label><br>
+                <input id="email" type="email" name="email" placeholder="email@address.com">
                 <!--If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
             </div>
             <div id="number-div">
-                <label class="description-label" id="number-label" for="number">????Number???</label><br>
-                <input id="number" type="number" name="number" min="" max="">
+                <label class="description-label" id="number-label" for="number">
+                    Age
+                </label><br>
+                <input id="number" type="number" name="number" min="1" max="3" placeholder="Your Age">
                 <!--If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
             </div>
             <div id="dropdown-div">
@@ -50,7 +56,7 @@
             </div>
             <div id="textarea-dive">
                 <label class="description-label" for="comments">Please Enter Additional Comments</label><br>
-                <textarea id="textarea" name="comments" rows="5" cols="50"></textarea>
+                <textarea id="textarea" name="comments" rows="8" cols="68"></textarea>
             </div>
                 <button type="button" id="submit">Submit</button>
         </form>
