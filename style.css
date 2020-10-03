@@ -15,11 +15,11 @@ body {
 
 header {
     text-align: center;
-    text-shadow: 
-        -1px 1px 0 #000,
-        1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000;
+}
+
+hr {
+    width: 75%;
+    opacity: .7;
 }
 
 div {
@@ -31,6 +31,21 @@ input {
     outline: none;
 }
 
+#dropdown {
+    width: 100%;
+    height: 37px;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(25,74,47, 0.0);
+    border: 3px solid white;
+    color: white;
+}
+
+option { 
+    /* Whatever color  you want */
+    background-color: rgba(25,74,47, 0.9);
+}
+
 textarea {
     outline: none;
     border-radius: 10px;
@@ -38,6 +53,9 @@ textarea {
     border: 3px solid white;
     color: white;
     padding: 8px 0 0 12px;
+    resize: none;
+    width: 96%;
+    height: 10em
 }
 
 input, textarea, select {
@@ -46,7 +64,7 @@ input, textarea, select {
 
 #name, #email, #number {
     height: 30px;
-    width: 485px;
+    width: 96%;
     /*text-indent: 10px;*/
     padding-left: 12px;
     border-radius: 10px;
@@ -68,8 +86,45 @@ input, textarea, select {
     margin: auto;
     padding: 25px;
     border-radius: 15px;
+    margin-top: 5em;
 }
 
+
+input[type='radio']:after, input[type='checkbox']:after, 
+    input[type='radio']:checked:after, input[type='checkbox']:checked:after {
+        width: 15px;
+        height: 15px;
+        top: -3px;
+        left: -3px;
+        position: relative;
+        background-color: rgba(25,74,47, 0.9);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+
+}
+
+input[type='radio']:checked:after, input[type='checkbox']:checked:after {
+    background-color: rgba(57, 90, 182, 1);
+}
+
+input[type='radio']:after, input[type='radio']:checked:after {
+    border-radius: 15px;
+}
+
+
+button {
+    background-color: rgba(57, 90, 182, 1);
+    /*border: 3px solid white;*/
+    color: white;
+    height: 35px;
+    width: 100%;
+    border: 0px solid white;
+    border-radius: 5px;
+    font-size: 16px;;
+    cursor: pointer;
+}
 
 .description-label {
     
@@ -89,3 +144,4 @@ footer {
     color: white;
     text-align: right;
 }
+
