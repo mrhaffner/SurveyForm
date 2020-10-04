@@ -8,7 +8,7 @@ body {
     /*https://www.freepik.com/free-vector/natural-background-with-tropical-forest-landscape_5223888.htm#page=1&query=forest+background&position=46*/
     background-size: cover;
     /*background-repeat: no-repeat;*/
-    font: ;
+    font-family: 'Cormorant Garamond', serif;
     color: white;
     font-size: 20px;
 }
@@ -39,11 +39,17 @@ input {
     background-color: rgba(25,74,47, 0.0);
     border: 3px solid white;
     color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    padding-left: 8px;
 }
 
 option { 
     /* Whatever color  you want */
     background-color: rgba(25,74,47, 0.9);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    outline: ;
 }
 
 textarea {
@@ -55,11 +61,24 @@ textarea {
     padding: 8px 0 0 12px;
     resize: none;
     width: 96%;
-    height: 10em
+    height: 10em;
 }
+
+textarea:hover, textarea:focus, #name:hover, #name:focus, #email:hover, #email:focus, 
+    #number:hover, #number:focus, #dropdown:hover, #dropdown:focus {
+    border: 3px solid #C0C0C0;
+}
+
+
 
 input, textarea, select {
     margin-top: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+#number {
+    font-size: 18px;
 }
 
 #name, #email, #number {
@@ -106,7 +125,7 @@ input[type='radio']:after, input[type='checkbox']:after,
 }
 
 input[type='radio']:checked:after, input[type='checkbox']:checked:after {
-    background-color: rgba(57, 90, 182, 1);
+    background-color: #A2708A; /*#824670 is more bold*/
 }
 
 input[type='radio']:after, input[type='radio']:checked:after {
