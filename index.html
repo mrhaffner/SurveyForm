@@ -11,8 +11,8 @@
 <body>
     <form id="survey-form">
         <header>            
-            <h1 id="title">Title</h1>
-            <p id="description">Description</p>
+            <h1 id="title">Product Satisfaction Survey</h1>
+            <p id="description">Please let us know how we are doing by telling us about your experience with our product.</p>
         </header>
         <hr>
         <div id="name-div">
@@ -26,43 +26,65 @@
                 E-Mail
             </label><br>
             <input id="email" type="email" name="email" placeholder="email@address.com">
-            <!--If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
         </div>
         <div id="number-div">
             <label class="description-label" id="number-label" for="number">
                 Age
             </label><br>
             <input id="number" type="number" name="number" min="1" max="3" placeholder="Your Age">
-            <!--If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
-        </div>
-        <div id="dropdown-div">
-            <label class="description-label" id="dropdown-label" for="dropdown">????DropdownOption???</label><br>
-            <select id="dropdown" name="dropdown">
-                <option value="0"></option>
-                <option value="1" class="drop-down-text">Hello</option>
-                <option value="2">Hello</option>
-                <option value="3">Hello</option>
-            </select>
         </div>
         <div id="radio-div">
-            <label class="description-label">???RadioButtons</label><br>
-            <input type="radio" id="" name="" value="">
-            <label for="">Hi</label><br>
-            <input type="radio" id="" name="" value="">
-            <label for="">Hi</label><br>
+            <label class="description-label">Would You Recommend Our Product to a Friend?</label><br>
+            <input type="radio" name="recommend" value="yes">
+            <span>Absolutely</span><br>
+            <input type="radio" name="recommend" value="maybe">
+            <span>Possibly</span><br>
+            <input type="radio" name="recommend" value="no">
+            <span>Not Sure</span><br>
         </div>
-        <div id="checkbox-div">
-            <label class="description-label">???CheckBoxes</label><br>
-            <input type="checkbox" id="" name="" value="">
-            <label for="">Hi</label><br>
-            <input type="checkbox" id="" name="" value="">
-            <label for="">Hi</label><br>
+        <div id="dropdown-div">
+            <label class="description-label" id="dropdown-label" for="dropdown">How Often Do You Use Our Product?</label><br>
+            <select id="dropdown" name="dropdown">
+                <option value="0"></option>
+                <option value="daily" class="drop-down-text">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+        </div>
+        <div>
+            <label class="description-label">What New Features Would You Like Added to Our Product?</label><br>
+            <div id="checkbox-div">
+                <div>
+                    <input type="checkbox" name="features" value="gold">
+                    <span for="">Gold Plating</span><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" value="fast">
+                    <span for="">Faster</span><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" value="sharp">
+                    <span for="">Sharper</span><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" value="solar">
+                    <span for="">Solar Power</span><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" value="bedazzle">
+                    <span for="">Bedazzle</span><br>
+                </div>
+                <div>
+                    <input type="checkbox" name="features" value="pointy">
+                    <span for="">Pointier</span><br>
+                </div>
+            </div>
         </div>
         <div id="textarea-div">
-            <label class="description-label" for="comments">Please Enter Additional Comments</label><br>
+            <label class="description-label" for="comments">What would you improve about our product?</label><br>
             <textarea id="textarea" name="comments" ></textarea>
         </div>
-            <button type="button" id="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
     </form>
     <footer>
         <p><a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a></p>
